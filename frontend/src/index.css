@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*body {*/
+/*  background-color: #111827; !* bg-gray-950 *!*/
+/*}*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 0.3s ease-in;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+/* Custom Scrollbar for WebKit Browsers */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #888;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  /*border: 3px solid #1a1a1a;*/
+}
+/*::-webkit-scrollbar-thumb:hover {*/
+/*  background-color: #6800f0;*/
+/*}*/
+/* Custom Scrollbar for Firefox */
+* {
+  scrollbar-color: #888 transparent;
+  scrollbar-width: auto;
+}

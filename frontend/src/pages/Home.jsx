@@ -1,5 +1,5 @@
 // import React from "react";
-// import FAQs from "../components/Faq";
+import FAQs from "../components/Faq";
 import Testimonials from "../components/Testimonials";
 // import Locations from "../components/Locations";
 import GamesGrid from "../components/PopularGames";
@@ -20,6 +20,7 @@ const Home = () => {
       {/*<Locations />*/}
       <Testimonials />
       {/*<FAQs />*/}
+      <FAQs />
     </div>
   );
 };

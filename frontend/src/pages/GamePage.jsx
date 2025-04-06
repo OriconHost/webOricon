@@ -65,7 +65,7 @@ const GamePage = () => {
                         </div>
                     </div>
                     <div>
-                        <img src={game.sideImage} alt={`${game.name} side`} />
+                        <img src={game.sideImage} alt={`${game.name} side`} className="pr-[150px]" />
                     </div>
                 </header>
             </div>

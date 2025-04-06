@@ -15,16 +15,16 @@ import GamePage from './pages/GamePage';
 import ScrollToTop from "./components/ScrollToTop";
 
 // Lazy load
-const Dedicated = lazy(() => import("./pages/Dedicated"));
-const VPSList = lazy(() => import("./pages/VPS"));
-const GamesListing = lazy(() => import("./pages/GamesListing"));
-const MinecraftPackages = lazy(() => import("./pages/Minecraft"));
-const RustPackages = lazy(() => import("./pages/Rust"));
-const UnturnedPackages = lazy(() => import("./pages/Unturned"));
-const BeamMPPackages = lazy(() => import("./pages/beammp"));
-const LegalDocumentation = lazy(() => import("./pages/Legal"));
+//const Dedicated = lazy(() => import("./pages/Dedicated"));
+//const VPSList = lazy(() => import("./pages/VPS"));
+//const GamesListing = lazy(() => import("./pages/GamesListing"));
+//const MinecraftPackages = lazy(() => import("./pages/Minecraft"));
+//const RustPackages = lazy(() => import("./pages/Rust"));
+//const UnturnedPackages = lazy(() => import("./pages/Unturned"));
+//const BeamMPPackages = lazy(() => import("./pages/beammp"));
+//const LegalDocumentation = lazy(() => import("./pages/Legal"));
 const AboutUs = lazy(() => import("./pages/About"));
-const CareersPage = lazy(() => import("./pages/Careers"));
+//const CareersPage = lazy(() => import("./pages/Careers"));
 const SupportPortal = lazy(() => import("./pages/SupportPortal"));
 const StatusList = lazy(() => import("./pages/Status"));
 
@@ -89,7 +89,7 @@ function AppContent() {
   const location = useLocation();
 
   return (
-    <div className="flex flex-col min-h-screen  text-stone-900">
+    <div className="flex flex-col min-h-screen  text-stone-900 bg-[#24293A]">
       <ScrollToTop />
       <PageTransitionLoader />
       {location.pathname === "/" && <PromoBanner />}
@@ -100,17 +100,17 @@ function AppContent() {
           <Suspense fallback={<LoadingSkeleton />}>
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/Dedicated" element={<Dedicated />} />
-              <Route path="/vps" element={<VPSList />} />
-              <Route path="/games" element={<GamesListing />} />
-              <Route path="/legal" element={<LegalDocumentation />} />
-              <Route path="/minecraft" element={<MinecraftPackages />} />
-              <Route path="/rust" element={<RustPackages />} />
-              <Route path="/unturned" element={<UnturnedPackages />} />
-              <Route path="/beammp" element={<BeamMPPackages />} />
+              {/*<Route path="/Dedicated" element={<Dedicated />} />*/}
+              {/*<Route path="/vps" element={<VPSList />} />*/}
+              {/*<Route path="/games" element={<GamesListing />} />*/}
+              {/*<Route path="/legal" element={<LegalDocumentation />} />*/}
+              {/*<Route path="/minecraft" element={<MinecraftPackages />} />*/}
+              {/*<Route path="/rust" element={<RustPackages />} />*/}
+              {/*<Route path="/unturned" element={<UnturnedPackages />} />*/}
+              {/*<Route path="/beammp" element={<BeamMPPackages />} />*/}
               <Route path="/about" element={<AboutUs />} />
               <Route path="/support" element={<SupportPortal />} />
-              <Route path="/careers" element={<CareersPage />} />
+              {/*<Route path="/careers" element={<CareersPage />} />*/}
               <Route path="/status" element={<StatusList/>} />
               <Route path="/game/:id" element={<GamePage />} />
 

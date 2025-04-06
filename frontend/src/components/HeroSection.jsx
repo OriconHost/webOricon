@@ -105,7 +105,7 @@ const features = [
                       <br />
                       Наша ответственность
                   </h1>
-                  <h2 className="text-left text-[18px] mt-[58px] font-light text-stone-900 mt-[48px] bg-clip-text w-fit">
+                  <h2 className="text-left text-[18px] font-light text-stone-900 mt-[48px] bg-clip-text w-fit">
                       Надёжный хостинг игровых серверов для Minecraft, Rust, CS2, ARK и<br/>других игр. Оптимальная производительность, мгновенная настройка,<br/>глобальные локации. Запускай свой сервер быстро и без проблем!
                   </h2>
 

@@ -11,7 +11,7 @@ const GamePlansSection = ({ plans, onSelectPlan, freePlans }) => {
                 plan.status === 'boost' ? 'border-[#4641BD] border-[3px]' : ''
             } ${
                 plan.status === 'popular' ? 'border-[#2466F4] border-[3px]' : ''
-            }`}
+             }`}
             onClick={() => onSelectPlan(plan)}
         >
             {plan.status === 'free' && (
@@ -61,10 +61,15 @@ const GamePlansSection = ({ plans, onSelectPlan, freePlans }) => {
 
     return (
         <section>
-            <div className="bg-[#1D202D] p-[25px] rounded-[10px] w-fit mb-[16px]">
-                <h2 className="text-center font-semibold text-[#BBBCC0] pb-[16px]">Попробуй бесплатно — идеально для теста!</h2>
-                {freePlans.map(renderPlanCard)}
-            </div>
+            {freePlans.length > 0 && (
+                <div className="bg-[#1D202D] p-[25px] rounded-[10px] w-fit mb-[16px]">
+                    <h2 className="text-center font-semibold text-[#BBBCC0] pb-[16px]">
+                        Попробуй бесплатно — идеально для теста!
+                    </h2>
+                    {freePlans.map(renderPlanCard)}
+                </div>
+            )}
+
 
             <div className="bg-[#1D202D] p-[25px] rounded-[10px] w-fit">
                 {plans.map(renderPlanCard)}

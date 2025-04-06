@@ -35,7 +35,7 @@ const Navbar = () => {
 
 
   return (
-      <nav className="bg-white sticky top-0 z-50 mt-6">
+      <nav className="bg-white sticky top-0 z-50 pt-6">
         <div className="max-w-screen-2xl mx-auto">
           <div className="flex justify-between items-center h-16">
 

@@ -55,7 +55,7 @@ const topGames = [
 const GamesGrid = () => {
   return (
     <div id="all-games-section" className="relative bg-[#24293A] overflow-hidden ">
-        <div className="w-full h-14 bg-[#2466F4] flex items-center justify-center">
+        <div className="w-full h-14 bg-[#2466F4] flex items-center justify-center ">
             <p className="text-white text-md font-semibold">
                 Присоединяйтесь к нашему{" "}
                 <a
@@ -84,7 +84,7 @@ const GamesGrid = () => {
           Все игры
         </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[20px] ">
               {topGames.map((game, index) => (
                   <div
                       key={index}
